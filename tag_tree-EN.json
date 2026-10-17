@@ -1,0 +1,197 @@
+{
+  "Road (road type)": {
+    "Highway (technical classification)": [
+      "Expressway",
+      "Ordinary highway"
+    ],
+    "Highway (geographic setting)": [
+      "Mountain road"
+    ],
+    "Urban road (functional classification)": [
+      "Urban expressway",
+      "Ordinary urban road"
+    ],
+    "Residential access road": ""
+  },
+  "Road (facility type)": {
+    "Road section": [],
+    "Ramp": [],
+    "Intersection (intersection type)": [
+      "Conventional intersection",
+      "Roundabout"
+    ],
+    "Bridge": [],
+    "Tunnel": [],
+    "Railway level crossing": [],
+    "On-street parking space": []
+  },
+  "Road (lane type)": {
+    "Motor vehicle lane": "",
+    "Acceleration lane": "",
+    "Deceleration lane": "",
+    "Sidewalk": "",
+    "Non-motorized vehicle lane": "",
+    "No separation of lane types": []
+  },
+  "Road (exclusive lane designation)": {
+    "Exclusive lane designation present (exclusive lane type)": [
+      "Bus-only lane",
+      "Emergency lane"
+    ],
+    "No exclusive lane designation": ""
+  },
+  "Road (lane width)": [
+    "Normal-width lane",
+    "Narrow lane"
+  ],
+  "Road (horizontal alignment)": [
+    "Sharp bend",
+    "Normal road alignment"
+  ],
+  "Road (vertical alignment)": {
+    "Steep grade (direction of travel)": [
+      "Steep uphill grade",
+      "Steep downhill grade"
+    ]
+  },
+  "Road (number of lanes per direction)": [
+    "One lane per direction",
+    "Two lanes per direction",
+    "More than two lanes per direction",
+    "More than three lanes per direction"
+  ],
+  "Road (change in lane count ahead)": [
+    "Fewer lanes ahead",
+    "More lanes ahead",
+    "Unchanged lane count ahead"
+  ],
+  "Road (surface condition)": {
+    "Normal road surface": [],
+    "Low-friction road surface": [
+      "Snow- or ice-covered road surface",
+      "Muddy road surface",
+      "Flooded road"
+    ]
+  },
+  "Road (traffic direction)": [
+    "One-way traffic",
+    "Two-way traffic"
+  ],
+  "Road (main or service road)": [
+    "Main road",
+    "Service road"
+  ],
+  "Road (surrounding built environment)": [
+    "Bus stop within 30 m",
+    "Emergency medical station within 30 m",
+    "Gas station within 30 m",
+    "Fire hydrant within 30 m",
+    "Fire station within 30 m",
+    "Intersection within 50 m",
+    "Railway level crossing within 50 m",
+    "Sharp bend within 50 m",
+    "Road less than 4 m wide within 50 m",
+    "Bridge within 50 m",
+    "Steep grade within 50 m",
+    "Tunnel within 50 m"
+  ],
+  "Road (safety conditions)": [
+    "Hazard-prone road",
+    "Road with good safety conditions"
+  ],
+  "Infrastructure (road marking provision)": {
+    "Road markings present (marking type)": {
+      "White Solid line": "",
+      "White dashed line": "",
+      "Yellow solid line": "",
+      "Yellow dashed line": "",
+      "Double solid white lines": "",
+      "Double dashed white lines": "",
+      "Double solid yellow lines": "",
+      "Double dashed yellow lines": "",
+      "White solid-and-dashed lines": "",
+      "Yellow solid-and-dashed lines": "",
+      "Pedestrian crossing markings": "",
+      "Stop line": "",
+      "Box junction marking": "",
+      "Directional arrow": "",
+      "channelizing line": "",
+      "Lane divider marking": "",
+      "Bus-only lane marking": "",
+      "Speed limit pavement marking": ""
+    },
+    "Road markings absent (marking type)": [
+      "No speed limit pavement marking present",
+      "No left turn prohibition marking present",
+      "No U-turn prohibition marking present",
+      "No road markings"
+    ]
+  },
+  "Infrastructure (traffic signal control)": {
+    "Traffic signals present (signal color)": [
+      "Red traffic light",
+      "Green traffic light",
+      "Yellow traffic light"
+    ],
+    "No traffic signals": ""
+  },
+  "Infrastructure (traffic sign provision)": {
+    "Traffic signs present (sign type)": [
+      "No U-turn sign",
+      "No left turn sign",
+      "No stopping sign",
+      "No honking sign",
+      "Speed limit sign",
+      "Warning sign"
+    ],
+    "Traffic signs absent (sign type)": [
+      "No U-turn prohibition sign present",
+      "No left turn prohibition sign present",
+      "No speed limit sign present",
+      "No traffic signs"
+    ]
+  },
+  "Infrastructure (central road separation provision)": [
+    "Road centerline",
+    "Median divider",
+    "No central road separation"
+  ],
+  "Traffic participants (special-purpose vehicles)": [
+    "Ambulance",
+    "Police vehicle",
+    "Fire engine"
+  ],
+  "Traffic management (management conditions)": {
+    "Traffic incidents (incident type)": [
+      "Roadworks",
+      "Traffic accident",
+      "Obstacles on the road",
+      "Vehicle breakdown"
+    ],
+    "Traffic police directing traffic": [],
+    "No traffic police directing traffic": [],
+    "Traffic management personnel directing traffic": []
+  },
+  "Environment (weather)": {
+    "Normal weather": "",
+    "Adverse weather": [
+      "Foggy weather",
+      "Rainy weather",
+      "Snowy weather",
+      "Dusty weather",
+      "Hail"
+    ]
+  },
+  "Environment (time of day)": [
+    "Daytime",
+    "Nighttime"
+  ],
+  "Environment (visibility)": {
+    "Normal visibility": [],
+    "Low visibility (visible distance)": [
+      "Visibility below 200 m",
+      "Visibility below 100 m",
+      "Visibility below 50 m"
+    ]
+  }
+}
