@@ -12,6 +12,6 @@ Official sources:
 
 DAIR-V2X: https://air.tsinghua.edu.cn/DAIR-V2X/english/index.html
 
-ONCE: https://once-for-auto-driving.github.io/terms_of_use.html
+ONCE: [https://once-for-auto-driving.github.io/terms_of_use.html](https://once-for-auto-driving.github.io/download.html#downloads)
 
 SODA10M: [https://soda-2d.github.io/about.html](https://soda-2d.github.io/download.html#instructions)
