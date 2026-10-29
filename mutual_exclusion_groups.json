@@ -1,0 +1,324 @@
+{
+  "title": "Scene-element mutual-exclusion groups and related constraints",
+  "scope_note": "This file declares source-script group membership and related constraints. It is not executable model code, and does not specify training/inference weights, numerical transformation order, or full runtime implementation.",
+  "mutually_exclusive_groups": [
+    {
+      "id": "road_type",
+      "name": "Road type",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Expressway",
+        "Ordinary highway",
+        "Mountain road",
+        "Urban expressway",
+        "Ordinary urban road",
+        "Residential access road"
+      ],
+      "members_zh_source": [
+        "高速公路",
+        "普通公路",
+        "山区公路",
+        "城市快速路",
+        "普通城市道路",
+        "小区内部道路"
+      ],
+      "caution": "These labels reflect source-script competition; some geographic and technical road attributes may overlap in reality."
+    },
+    {
+      "id": "road_facility",
+      "name": "Road facility/location",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Road section",
+        "Ramp",
+        "Conventional intersection",
+        "Roundabout",
+        "Bridge",
+        "Tunnel",
+        "Railway level crossing"
+      ],
+      "members_zh_source": [
+        "路段",
+        "匝道",
+        "普通交叉口",
+        "环形交叉口",
+        "桥梁",
+        "隧道",
+        "铁路道口"
+      ],
+      "caution": "These labels reflect source-script competition; some facility categories may coexist in reality."
+    },
+    {
+      "id": "motor_lane_presence",
+      "name": "Motor-vehicle lane designation",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Motor vehicle lane",
+        "No separation of lane types"
+      ],
+      "members_zh_source": [
+        "机动车道",
+        "没有划分车道类型"
+      ]
+    },
+    {
+      "id": "exclusive_lane",
+      "name": "Exclusive lane designation",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Bus-only lane",
+        "Emergency lane",
+        "No exclusive lane designation"
+      ],
+      "members_zh_source": [
+        "公交专用车道",
+        "应急车道",
+        "无车道专属权"
+      ]
+    },
+    {
+      "id": "lane_width",
+      "name": "Lane width",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Normal-width lane",
+        "Narrow lane"
+      ],
+      "members_zh_source": [
+        "宽度正常的车道",
+        "狭窄的车道"
+      ]
+    },
+    {
+      "id": "road_alignment",
+      "name": "Horizontal road alignment",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Sharp bend",
+        "Normal road alignment"
+      ],
+      "members_zh_source": [
+        "急转弯",
+        "正常线形"
+      ]
+    },
+    {
+      "id": "lane_count_vs_divider",
+      "name": "Cross-category source competition (review before reuse)",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "One lane per direction",
+        "Lane divider marking"
+      ],
+      "members_zh_source": [
+        "单车道",
+        "车行道分界线"
+      ],
+      "caution": "Competition appears in supplied source code but is cross-category; the two concepts can coexist in a real scene and should not be interpreted as a universal logical exclusion."
+    },
+    {
+      "id": "lanes_per_direction",
+      "name": "Number of lanes per direction: base alternatives",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "One lane per direction",
+        "Two lanes per direction",
+        "More than two lanes per direction"
+      ],
+      "members_zh_source": [
+        "单车道",
+        "双车道",
+        "大于两条车道"
+      ],
+      "note": "More than three lanes per direction is a subset of more than two, and is handled separately as a hierarchy (not as another competing class)."
+    },
+    {
+      "id": "lane_count_change",
+      "name": "Lane count change ahead",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Fewer lanes ahead",
+        "More lanes ahead",
+        "Unchanged lane count ahead"
+      ],
+      "members_zh_source": [
+        "前方车道数减少",
+        "前方车道数增加",
+        "前方车道数不变"
+      ]
+    },
+    {
+      "id": "road_surface",
+      "name": "Road-surface condition",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Normal road surface",
+        "Snow- or ice-covered road surface",
+        "Muddy road surface",
+        "Flooded road"
+      ],
+      "members_zh_source": [
+        "正常路面",
+        "冰雪路面",
+        "泥泞路面",
+        "漫水路"
+      ]
+    },
+    {
+      "id": "traffic_direction",
+      "name": "Traffic direction",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "One-way traffic",
+        "Two-way traffic"
+      ],
+      "members_zh_source": [
+        "单向通行",
+        "双向通行"
+      ]
+    },
+    {
+      "id": "road_safety_condition",
+      "name": "Road safety condition",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Hazard-prone road",
+        "Road with good safety conditions"
+      ],
+      "members_zh_source": [
+        "容易发生危险的道路",
+        "安全性良好的道路"
+      ]
+    },
+    {
+      "id": "traffic_signal",
+      "name": "Traffic-signal state",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Red traffic light",
+        "Green traffic light",
+        "Yellow traffic light",
+        "No traffic signals"
+      ],
+      "members_zh_source": [
+        "红灯",
+        "绿灯",
+        "黄灯",
+        "无交通信号灯"
+      ]
+    },
+    {
+      "id": "central_divider",
+      "name": "Road-center separation",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Road centerline",
+        "Median divider",
+        "No central road separation"
+      ],
+      "members_zh_source": [
+        "道路中心线",
+        "中央分隔带",
+        "无中央隔离设施"
+      ]
+    },
+    {
+      "id": "weather",
+      "name": "Weather condition",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Foggy weather",
+        "Rainy weather",
+        "Snowy weather",
+        "Dusty weather",
+        "Hail",
+        "Normal weather"
+      ],
+      "members_zh_source": [
+        "雾天",
+        "雨天",
+        "雪天",
+        "沙尘天",
+        "冰雹天",
+        "正常天气"
+      ]
+    },
+    {
+      "id": "time_of_day",
+      "name": "Time of day",
+      "taxonomy_status": "all_members_in_119",
+      "members_en": [
+        "Daytime",
+        "Nighttime"
+      ],
+      "members_zh_source": [
+        "白天",
+        "夜晚"
+      ]
+    }
+  ],
+  "related_conditional_and_hierarchical_constraints": [
+    {
+      "id": "no_road_markings_vs_specific_markings",
+      "relation": "conditional_negative_evidence_suppression",
+      "description": "The absence-of-road-markings predicate competes conditionally with multiple positive marking categories; this is not a single categorical softmax group.",
+      "absence_label_en": "No road markings",
+      "absence_label_zh": "无交通标线",
+      "competing_categories": {
+        "elements_en_in_119": [
+          "White Solid line",
+          "Yellow solid line",
+          "White dashed line",
+          "Yellow dashed line",
+          "Double solid yellow lines",
+          "Double solid white lines",
+          "Double dashed white lines",
+          "Double dashed yellow lines",
+          "White solid-and-dashed lines",
+          "Yellow solid-and-dashed lines",
+          "Pedestrian crossing markings",
+          "Directional arrow",
+          "Box junction marking",
+          "Stop line",
+          "channelizing line",
+          "Lane divider marking",
+          "Bus-only lane marking",
+          "Speed limit pavement marking"
+        ],
+        "source_only_labels_zh": [
+          "禁止左转标线",
+          "禁止掉头标线"
+        ],
+        "source_only_english_glosses": [
+          "No-left-turn pavement marking (source-only)",
+          "No-U-turn pavement marking (source-only)"
+        ]
+      }
+    },
+    {
+      "id": "lane_count_hierarchy",
+      "relation": "subset_implication",
+      "description": "More than three lanes per direction implies more than two lanes per direction, so the nested predicate is not a fourth independent competitor.",
+      "subset_en": "More than three lanes per direction",
+      "superset_en": "More than two lanes per direction"
+    },
+    {
+      "id": "visibility_hierarchy",
+      "relation": "threshold_implication_and_normal_low_competition",
+      "description": "Visibility below 50 m implies below 100 m and below 200 m; normal visibility competes with low visibility (<200 m).",
+      "ordered_thresholds_en": [
+        "Visibility below 50 m",
+        "Visibility below 100 m",
+        "Visibility below 200 m"
+      ],
+      "normal_label_en": "Normal visibility"
+    },
+    {
+      "id": "no_traffic_police",
+      "relation": "complement_derived_label",
+      "description": "The source derives No traffic police directing traffic as a complement of Traffic police directing traffic; this is not an independent group-softmax call.",
+      "positive_en": "Traffic police directing traffic",
+      "negative_en": "No traffic police directing traffic"
+    }
+  ]
+}
