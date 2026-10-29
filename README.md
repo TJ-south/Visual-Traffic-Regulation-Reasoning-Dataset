@@ -31,24 +31,6 @@ The repository **does not redistribute any original images**. It supplies resear
 3. **Interpret the annotation vocabulary** with `tag_tree-EN.json`, which provides the hierarchy, and `runtime_prompts_119-EN.json`, which provides prompts for the 119 English scene-element names.
 4. **Inspect semantic constraints** using `mutual_exclusion_groups.json`. Its `mutually_exclusive_groups` entries list the groups configured in the supplied reasoning script. Conditional absence evidence and nested predicates are placed separately under `related_conditional_and_hierarchical_constraints` rather than being incorrectly described as flat mutual-exclusion groups.
 
-### Important note on group semantics
-
-The mutual-exclusion declaration was extracted from the source script's probability-refinement logic and translated to the English label vocabulary where possible. Some source-script members, notably specific numerical speed-limit sign classes, are **not present as separate nodes in the published 119-element prompt vocabulary**. Such members are marked `source_only_not_in_119` rather than being treated as additional public labels. Some configured groups can also contain concepts that coexist in real road scenes; consequently, group membership should be understood as **a modeling/configuration choice**, not a universal statement of legal or semantic incompatibility.
-
-`mutual_exclusion_groups.json` documents group membership and relationships; it is **not an executable implementation** of the complete perception or aggregation pipeline.
-
-## Annotation and evaluation context
-
-Three graduate researchers specializing in traffic-law research independently annotated regulation prerequisites and image-level scene elements, with disagreements resolved through discussion; difficult legal interpretation questions were further checked with traffic-safety experts. In the associated study, image-level regulation-applicability labels were derived from consensus scene-element labels and predefined regulation–element mappings. Dataset images were selected to cover varied road segments and scenarios, and severely occluded images that prevented reliable annotation were excluded.
-
-The experimental protocol uses group-aware cross-validation to reduce leakage between images originating from the same sequence/session. **Use the supplied group identifiers rather than randomly splitting individual frames.** More detailed annotation and evaluation procedures are described in the accompanying paper.
-
-## Regulation knowledge-base availability
-
-The accompanying study uses **198 regulation entries** based on Chinese traffic regulations applicable in mainland China, including the Road Traffic Safety Law of the People's Republic of China, its Implementation Regulations, and the GB 5768 Road Traffic Signs and Markings standards. The taxonomy, scene-element annotations, and semantic prompts in this repository are **not themselves a substitute for the complete regulation list or the explicit regulation–element prerequisite mapping table**.
-
-The current repository root does **not** list a standalone file containing the full regulation inventory or the regulation–element prerequisite mappings. If these resources are already embedded within `original_data-EN.json`, please document their exact keys here; otherwise, they must be released separately to enable independent reconstruction of regulation-applicability labels. This README does not claim that `mutual_exclusion_groups.json` provides these mappings.
-
 ## Obtaining source images and licensing
 
 The benchmark refers to images from **DAIR-V2X, ONCE, and SODA10M**. The original images remain subject to their respective providers' terms. This repository distributes source identifiers/references and additional annotation assets, **not** copies of the source images. Obtain the images from the official providers and comply with the relevant conditions before using or redistributing them.
